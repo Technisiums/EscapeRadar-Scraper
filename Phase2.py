@@ -268,7 +268,7 @@ class Scraper:
             game.avg = val
 
     def excel_reader(self, city):
-        wb = load_workbook('input/input1.xlsx', data_only=True)
+        wb = load_workbook('input1.xlsx', data_only=True)
         sheet = wb[city]
         self.prices['link'] = str(sheet['C1'].value)
         for x in range(2, sheet.max_row + 1):
