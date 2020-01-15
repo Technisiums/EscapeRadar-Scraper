@@ -334,7 +334,7 @@ class ExcelWriter:
     fname = ""
 
     def __init__(self):
-        self.fname = "output/outfile.xlsx"
+        self.fname = "outfile.xlsx"
         try:
             self.workbook = load_workbook(self.fname)
             self.worksheet = self.workbook[self.workbook.sheetnames[0]]
