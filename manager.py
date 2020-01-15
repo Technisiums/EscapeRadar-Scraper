@@ -30,7 +30,7 @@ class mywindow(QtWidgets.QMainWindow):
         scroll_area.setWidget(scrollAreaWidgetContents)
         self.ui.verticalLayout_2.addWidget(scroll_area)
         self.data = list()
-        self.read_excel_file('input/input.xlsx')
+        self.read_excel_file('input.xlsx')
         self.add_items(self.data)
         self.ui.pushButton.clicked.connect(self.search_click)
         self.ui.pushButton_2.clicked.connect(partial(self.add_items, self.data))
